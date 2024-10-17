@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="page3.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <nav id="nav">
+        <div class="left">
+            <img src="picture.png" alt="" onclick="page_change_about(1)">
+        </div>
+        <div class="right">
+            <a href="index.html" class="one">
+                <i class="fa-solid fa-house"></i>
+                <span>ABOUT ME</span>
+            </a>
+
+            <a href="page2.html" class="two">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>WORK</span>
+            </a>
+
+            <a href="page3.html" class="three">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>MY STUDIO</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--INTRODUCTION-->
+        <section class="introduction">
+            <img src="arena_studioz_bg.png" alt="lol" class="img">
+
+            <div class="text">
+                <h1>ARENA STUDIOZ</h1>
+                <p class="large_text_main">
+                    <span class="highlight">RE-IMAGINING</span><br>THE<br>ARENA<br>OF<br>GAMES
+                </p>
+            </div>
+
+            <!--HISTORY-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <h2>HISTORY</h2>
+                        <p class="large_text_sub">
+                            I FOUNDED ARENA STUDIOZ IN 2022 WITH A SMALL GROUP OF<span class="highlight_bold"> FRIENDS </span>ON DISCORD.
+                        </p>
+                        <p class="small_text_sub3">
+                            We are now a team of 12 Developers!
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <!--OUR PROJECTS-->
+                <section class="section_bg_opaque section_bg_special">
+                    <h2>OUR PROJECTS</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 0)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="arena1.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Character Design (flamethrower)
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="arena2.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Maps for one of our projects based on a neon theme
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="arena3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Worked with Paradoxum Games and won the Bloxy Award from Roblox!
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="arena4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Character Animation
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 0)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--VIDEO-->
+            <div class="section_bg_transparent">
+                <img src="as.png" alt="Stovetop" class="cinematic_image_sub">
+                <h2>LOOK US UP ON YOUTUBE</h2>
+                
+                <div class="videos">
+
+                    <iframe width="900" height="500" class="lolol"
+                        src="https://www.youtube.com/embed/LZR0Zcpeaa4?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <footer>
+                <div class="text6">
+                    <h1>LETS CONNECT</h1>
+                    
+                    <div class="vertical_card_holder grid_count_four">
+                        <a href="https://discord.gg/7bVgmvFnsG" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+            
+                        <a href="https://www.youtube.com/@Wizzly" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>Youtube</span>
+                        </a>
+            
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+            
+                        <a href="https://www.instagram.com/shayn_p_reira/profilecard/?igsh=NGQyN3pidGh3emE3" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="https://www.behance.net/shaynepereira1" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-behance"></i>
+                            <span>Behance</span>
+                        </a>
+                    </div>
+
+                    <div class="space">
+                        <h5>Email: shayneper004@gmail.com</h5>
+                        <h5>Phone: 9611288099</h5>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+
+<!--SCRIPTS-->
+<script>
+    // SCRIPT TO CHANGE PAGE
+    function page_change_about(id) {
+        if (id == 1) {
+            window.location.assign("index.html")
+        } else {
+            window.location.assign("page2.html")
+        }
+    }
+
+    // SCRIPT TO SCROLL THROUGH GALLERY
+    function scrolly(direction, id) {
+        let scroll_container_list = document.querySelectorAll(".vertical_card_holder_scrolling");
+
+        if (direction == 1) {
+            scroll_container_list[id].style.scrollBehavior = "smooth";
+            scroll_container_list[id].scrollLeft += 950;
+        } else {
+            scroll_container_list[id].style.scrollBehavior = "smooth";
+            scroll_container_list[id].scrollLeft -= 950;
+        }
+    }
+
+    // SCRIPT TO CHANGE TOP-BAR OPACITY
+    window.onscroll = function() {
+        var nav = document.getElementById('nav');
+        if ( window.pageYOffset > 700 ) {
+            nav.style.backgroundColor = "#0C0C0C";
+        } else {
+            nav.style.backgroundColor = "rgba(27, 27, 27, 0)";
+        }
+    }
+</script>
+</html>

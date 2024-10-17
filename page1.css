@@ -1,0 +1,280 @@
+@import url("styles.css");
+@import url("common_utilities.css");
+
+
+
+
+/* FUNCTIONS */
+@keyframes fade-in {
+    from {scale: 1; opacity: 1;}
+    to {scale: 1.5; opacity: 0.1;}
+}
+
+nav .right .one {
+    color: var(--text-color1b);
+}
+
+
+
+/* INTRODUCTION */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    height: fit-content;
+    width: 100%;
+    vertical-align: top;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.introduction .img {
+    margin-top: 80px;
+    position: absolute;
+    z-index: -1;
+    height: 700px;
+    align-self: center;
+    overflow-x: hidden;
+    animation: fade-in linear;
+    animation-timeline: view();
+}
+
+.introduction .text {
+    margin: 150px 0;
+    margin-top: 200px;
+}
+
+.space {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1000px) {
+
+    /* STYLES */
+    h2 {
+        margin: 20px 50px;
+    }
+
+    h3 {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    .small_text_style {
+        font-size: 18px;
+    }
+
+
+
+    /* ELEMENTS */
+    .small_text_main {
+        margin-right: 50px;
+        display: none;
+    }
+
+    .large_text_sub {
+        margin: 20px 50px;
+        font-size: 30px;
+    }
+
+
+
+    .grid_count_three {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vertical_card_holder {
+        height: fit-content;
+        gap: 25px;
+    }
+
+    .cinematic_image_sub {
+        margin-top: -50px;
+        width: 120%;
+    }
+
+
+
+    .sub_links {
+        margin: 10px 5px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+
+    /* NAVIGATION BAR */
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color1);
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+
+
+    /* STYLES */
+    h2 {
+        margin: 20px 50px;
+    }
+
+    h3 {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    h4 {
+        margin: 0 10px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .small_text_style {
+        font-size: 12px;
+    }
+
+
+
+    /* ELEMENTS */
+    .introduction {
+        height: auto;
+    }
+
+
+
+    .small_text_main {
+        margin-right: 50px;
+        display: flex;
+        color: var(--text-color1);
+    }
+
+    .small_text_sub {
+        display: grid;
+        color: var(--text-color1);
+        margin: 20px 0;
+        font-size: 15px;
+    }
+
+    .small_text_sub2 {
+        font-size: 10px;
+        height: 30px;
+        color: var(--text-color1);
+    }
+
+    .large_text_sub {
+        margin: 20px 50px;
+        font-size: 30px;
+    }
+
+
+
+    .cinematic_image_sub {
+        margin-top: -50px;
+        margin-left: -150px;
+        width: 200%;
+    }
+
+
+
+    .section_bg_opaque {
+        margin-top: 25px;
+        padding: 25px 0;
+    }
+
+    .section_bg_special {
+        padding-top: 0px;
+    }
+
+
+
+    .horizontal_card {
+        height: 100px;
+        gap: 25px
+    }
+
+    .vertical_card {
+        padding: 25px 20px;
+        width: 100%;
+    }
+
+    .vertical_card img {
+        width: 100px;
+    }
+
+    .vertical_card_holder {
+        height: fit-content;
+        gap: 25px;
+    }
+
+    .vertical_card_holder_scrolling {
+        gap: 5px;
+        width: 300px;
+    }
+
+    .vertical_card_scrolling {
+        height: 170px;
+        border-radius: 10px;
+        background-color: var(--text-color1);
+    }
+
+
+
+    .tall_config {
+        height: 100px;
+    }
+
+    .wide_config {
+        width: 180px;
+    }
+
+    .grid_count_three {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid_count_four {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .btn {
+        margin-top: 60px;
+        padding: 10px 5px;
+        border: 2px solid var(--text-color1b);
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .btn_expand {
+        padding: 15px 15px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+
+
+    .sub_links {
+        margin: 10px 5px;
+        font-size: 15px;
+    }    
+}
+

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="page2.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <nav id="nav">
+        <div class="left">
+            <img src="picture.png" alt="" onclick="page_change_about(1)">
+        </div>
+        <div class="right">
+            <a href="index.html" class="one">
+                <i class="fa-solid fa-house"></i>
+                <span>ABOUT ME</span>
+            </a>
+
+            <a href="page2.html" class="two">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>WORK</span>
+            </a>
+
+            <a href="page3.html" class="three">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>MY STUDIO</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--SECTION 1 Introduction-->
+        <section class="introduction">
+            <img src="bedwars.png" alt="lol" class="img">
+
+            <div class="text">
+                <h1>AS A</h1>
+                <p class="large_text_main">
+                    LEARNING<br>GAME<br>DESIGNER<br><span class="highlight">AND<br>DEVELOPER</span>
+                </p>
+                <h1>MOST OF MY WORK IS TECHNICALITY ALONG WITH DESIGN</h1>
+            </div>
+            <!--GAME DEVELOPMENT PROJECTS-->
+            <div class="section_bg_transparent">
+                <h2>GAME DEVELOPMENT PROJECTS</h2>
+            </div>
+            <!--PROJECT 1-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <p class="color_blue large_text_sub">
+                            <span class="highlight">1. MINEKORP</span>
+                        </p>
+                        <p class="large_text_sub displayed" id="expand_display1">
+                            GUI & UX DESIGN,<br>PROGRAMMING
+                        </p>
+                        <p class="small_text_sub3">
+                            Revolutionary Discord Bot that brings 3D Games into 2D social media platforms! We integrate Games into common Social Media apps<br> <br>Worked as:<span class="highlight_bold"> Icon Designer and Developer</span>
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                        <button class="btn_expand" onclick="expansion(0, 1, 0)">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <section class="section_bg_opaque section_bg_special displayed2" id="expand_display3">
+                    <h2>GALLERY</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 0)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="Frame 3.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    UI from MINEKORP
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="frame4.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    An icon pack I designed for MINEKORP
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="minekorp3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Ores I designed for world generation
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="minekorp4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    UI from MINEKORP
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 0)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--PROJECT 2-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <p class="color_blue large_text_sub">
+                            <span class="highlight">2. BEDWARS</span>
+                        </p>
+                        <p class="large_text_sub displayed" id="expand_display1">
+                            GUI & GAME DESIGN,<br>PROGRAMMING
+                        </p>
+                        <p class="small_text_sub3">
+                            A Roblox Game that focuses on PvP mechanics. Protect your bed from enemies to survive!<br> <br>Worked as:<span class="highlight_bold"> Game Designer</span>
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                        <button class="btn_expand" onclick="expansion(2, 3, 1)">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <section class="section_bg_opaque section_bg_special displayed2" id="expand_display3">
+                    <h2>GALLERY</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 1)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="bedwars1.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Character Design (Archer)
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="bedwars3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Minecraft styled Map design (Sun Temple)
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="bedwars2.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Halloween event render for cover page
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="bedwars4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Halloween event Map Design
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 1)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--PROJECT 3-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <p class="color_blue large_text_sub">
+                            <span class="highlight">3. REALM 9 INTERACTIVE</span>
+                        </p>
+                        <p class="large_text_sub displayed" id="expand_display1">
+                            GUI DESIGN,<br>GAME DESIGN
+                        </p>
+                        <p class="small_text_sub3">
+                            A studio, where we focus on making Mythical RPG Games. We imagine worlds that you only see in your dreams...<br> <br>Worked as:<span class="highlight_bold"> Game Developer and Modeller</span>
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                        <button class="btn_expand" onclick="expansion(4, 5, 2)">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <section class="section_bg_opaque section_bg_special displayed2" id="expand_display3">
+                    <h2>GALLERY</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 2)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="realm1.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Map design for a cutesy game
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="realm2.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Map design for a horror, open-world RPG game
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="realm3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Map design (waterfall)
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="realm4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Glowing orb in a rainy terrain
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 2)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--DESIGN PROJECTS-->
+            <div class="section_bg_transparent">
+                <img src="stove.png" alt="Stovetop" class="cinematic_image_sub">
+
+                <div class="text">
+                    <h1>BUT I AM ALSO A</h1>
+                    <p class="large_text_main">
+                        LEARNING<br><span class="highlight">INTERACTION</span><br>DESIGNER<br>AT<br>PES
+                    </p>
+                    <h1>THESE ARE SOME OF MY PROJECTS</h1>
+                </div>
+
+                <div class="section_bg_transparent">
+                    <h2>DESIGN PROJECTS</h2>
+                </div>
+            </div>
+
+            <!--PROJECT 1-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <p class="color_blue large_text_sub">
+                            <span class="highlight">1. SMALL VENDOR CART</span>
+                        </p>
+                        <p class="large_text_sub displayed" id="expand_display1">
+                            UI & UX RESEARCH,<br>CART DESIGN
+                        </p>
+                        <p class="small_text_sub3">
+                            Needed to design a sustainable solution for small vendors in the Indian market. A lot of User experience research and market study.
+
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                        <button class="btn_expand" onclick="expansion(6, 7, 3)">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <section class="section_bg_opaque section_bg_special displayed2" id="expand_display3">
+                    <h2>GALLERY</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 3)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="cart1.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    UI Design for the cart
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="cart2.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    An image of the cart being used
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="cart3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Interiors of the cart, where the vendor's amenities are
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="cart4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    2 Large screens are attached on top
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 3)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--PROJECT 2-->
+            <div class="section_bg_opaque section_bg_condensed">
+                <div class="vertical_data_holder">
+                    <div class="left_holder_lol">
+                        <p class="color_blue large_text_sub">
+                            <span class="highlight">2. MODERNIZING A STOVETOP</span>
+                        </p>
+                        <p class="large_text_sub displayed" id="expand_display1">
+                            UX RESEARCH,<br>UI & UX DESIGN
+                        </p>
+                        <p class="small_text_sub3">
+                            Improvising and Modernizing the existing cooking range. This included adding a bunch of features that improve ease of use.
+                        </p>
+                    </div>
+
+                    <div class="buttonss">
+                        <button class="btn_expand" onclick="expansion(8, 9, 4)">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <img src="roblox.png" alt="" class="dumb displayed" id="expand_display2">
+
+                <section class="section_bg_opaque section_bg_special displayed2" id="expand_display3">
+                    <h2>GALLERY</h2>
+
+                    <div class="vertical_card_holder grid_count_five">
+                        <button class="btn" onclick="scrolly(0, 4)">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        
+                        <div class="vertical_card_holder_scrolling">
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="cooking1.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Raisable burners for ease of cleaning
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="cooking2.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    The stovetop being used in a modern household
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling wide_config">
+                                <img src="cooking3.png" alt="Easy Games" class="vertical_card_scrolling_image wide_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Massive screen in-built for a range of useful features
+                                </p>
+                            </div>
+
+                            <div class="vertical_card_scrolling tall_config">
+                                <img src="cooking4.png" alt="Easy Games" class="vertical_card_scrolling_image tall_config">
+                                <p class="small_text_sub2 small_text_style">
+                                    Optimized burners for leaks and spills
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn" id="front" onclick="scrolly(1, 4)">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--FOOTER-->
+            <footer>
+                <div class="text6">
+                    <h1>LETS CONNECT</h1>
+                    
+                    <div class="vertical_card_holder grid_count_four">
+                        <a href="https://discord.gg/7bVgmvFnsG" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+            
+                        <a href="https://www.youtube.com/@Wizzly" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>Youtube</span>
+                        </a>
+            
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+            
+                        <a href="https://www.instagram.com/shayn_p_reira/profilecard/?igsh=NGQyN3pidGh3emE3" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="https://www.behance.net/shaynepereira1" target="_blank" rel="noopener noreferrer" class="sub_links">
+                            <i class="fa-brands fa-behance"></i>
+                            <span>Behance</span>
+                        </a>
+                    </div>
+
+                    <div class="space">
+                        <h5>Email: shayneper004@gmail.com</h5>
+                        <h5>Phone: 9611288099</h5>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+
+<!--SCRIPTS-->
+<script>
+    // SCRIPT TO CHANGE PAGE
+    function page_change_about(id) {
+        if (id == 1) {
+            window.location.assign("index.html")
+        } else {
+            window.location.assign("page3.html")
+        }
+    }
+
+    // SCRIPT TO SCROLL THROUGH GALLERY
+    const button_counts = [0, 0, 0, 0, 0];
+
+    function scrolly(direction, id) {
+        let scroll_container_list = document.querySelectorAll(".vertical_card_holder_scrolling");
+
+        if (direction == 1) {
+            scroll_container_list[id].style.scrollBehavior = "smooth";
+            scroll_container_list[id].scrollLeft += 950;
+        } else {
+            scroll_container_list[id].style.scrollBehavior = "smooth";
+            scroll_container_list[id].scrollLeft -= 950;
+        }
+    }
+
+    // SCRIPT TO EXPAND/CLOSE EACH PROJECT
+    function expansion(id_1, id_2, id_3) {
+        let button_list = document.querySelectorAll(".btn_expand");
+        let hidden_text_list = document.querySelectorAll(".displayed");
+        let hidden_section_list = document.querySelectorAll(".displayed2");
+        let button_count = button_counts[id_3]
+
+        if (button_count == 0) {
+            button_list[id_3].style.backgroundColor = "#AA3434"
+            button_list[id_3].style.color = "#131313"
+
+            hidden_text_list[id_1].style.visibility = "visible";
+            hidden_text_list[id_1].style.opacity = 1;
+            hidden_text_list[id_1].style.height = "fit-content";
+
+            hidden_text_list[id_2].style.visibility = "visible";
+            hidden_text_list[id_2].style.opacity = 1;
+            hidden_text_list[id_2].style.height = "fit-content";
+
+            hidden_section_list[id_3].style.visibility = "visible";
+            hidden_section_list[id_3].style.opacity = 1;
+            hidden_section_list[id_3].style.height = "fit-content";
+            hidden_section_list[id_3].style.paddingTop = "100px"; 
+            hidden_section_list[id_3].style.marginTop = "75px";
+
+            button_counts[id_3]++
+        } else {
+            button_list[id_3].style.backgroundColor = "#0C0C0C"
+            button_list[id_3].style.color = "#AA3434"
+
+            hidden_text_list[id_1].style.transition = "0.6s";
+            hidden_text_list[id_1].style.visibility = "hidden";
+            hidden_text_list[id_1].style.opacity = 0;
+            hidden_text_list[id_1].style.height = 0;
+
+            hidden_text_list[id_2].style.transition = "0.6s";
+            hidden_text_list[id_2].style.visibility = "hidden";
+            hidden_text_list[id_2].style.opacity = 0;
+            hidden_text_list[id_2].style.height = 0;
+
+            hidden_section_list[id_3].style.visibility = "hidden";
+            hidden_section_list[id_3].style.opacity = 0;
+            hidden_section_list[id_3].style.height = 0;
+            hidden_section_list[id_3].style.paddingTop = "0"; 
+            hidden_section_list[id_3].style.marginTop = "0";
+
+            button_counts[id_3] = 0
+        }
+    }
+
+    // SCRIPT TO CHANGE TOP-BAR OPACITY
+    window.onscroll = function() {
+        var nav = document.getElementById('nav');
+        if ( window.pageYOffset > 700 ) {
+            nav.style.backgroundColor = "#0C0C0C";
+        } else {
+            nav.style.backgroundColor = "rgba(27, 27, 27, 0)";
+        }
+    }
+</script>
+</html>
